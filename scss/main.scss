@@ -1,0 +1,224 @@
+@import "variables";
+*{margin: 0; padding: 0}
+
+h1 {display: none;}
+
+.superior {
+    background: rgb(49, 48, 48);
+    flex-direction: row;
+    padding-block: 10px;
+ }
+
+ .logo-proandroid{
+    max-width: 100%;
+}
+
+.buscador {
+    margin-top: 1%;
+    margin-left: 20%;
+    position: center;
+    display:flex;
+    position:realtive;
+    max-width:40%;
+    flex-direction:row;
+  }
+  
+  .buscador>input[type=text],
+  .buscador>button {
+    display:block;
+  
+  }
+  
+  .buscador>input[type=text] {
+    flex:auto;
+    border:2px solid $color-primary;
+  }
+  
+  .buscador>button {
+    padding:5px 5px;
+    background-color: $color-primary;
+    color:white;
+    border:none;
+  }
+
+
+.logo-proandroid{
+    margin-left: 20%;
+}
+
+.menu {
+    flex-direction: row;
+    list-style: none;
+    background: rgb(49, 48, 48);
+
+    li{
+        flex-direction: row;
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        display: block;
+        text-align: center;
+    :hover {
+        background: rgb(214, 12, 12);}}}
+    }
+
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(241, 235, 235);
+}
+
+
+.usuario {
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        display: block;
+        text-align: center;}
+
+ :hover{
+     background: rgb(214, 12, 12);}
+} 
+
+
+.colecciones-home{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none 
+  
+}
+.retiros-home {
+    text-align: center;
+    color: $color-primary;
+
+}
+.ws-boton {
+
+    position: fixed;
+    width:60px;
+    height:60px;
+    bottom:20px;
+    right:20px;
+    
+}
+
+
+.pie {
+    text-align: center;
+    display: flex;
+    color: rgb(119, 119, 119);
+    background: rgb(49, 48, 48);
+    padding: 15px;
+    font-family: 'Roboto Condensed', sans-serif;}
+
+.login {
+    text-align:center;
+}
+
+.txt-accesorios {
+    text-align: center;
+}
+
+.pag-mayorista {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none}
+
+.tabla-mayoristas {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid;
+    padding: 3px;}
+
+.txt-nosotros {
+        text-align: center;  }
+
+.txt-repuestos {
+        text-align: center;  }
+
+
+@media screen and (min-width: 768px) {
+
+.logo-proandroid{
+    margin-left: 8px;
+    width: 70%;}
+    
+
+.menu {
+    list-style: none;
+    background: rgb(49, 48, 48);}
+    
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: center;}
+    
+.menu li {
+    display: inline-block}
+    
+.menu li a:hover {
+    background: rgb(214, 12, 12);}
+    
+.superior {
+    background: rgb(49, 48, 48);
+    display: flex;
+    padding-block: 10px;}
+    
+.colecciones-home{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: none;
+    }
+
+.buscador {
+    display:flex;
+    position:realtive;
+    width:40%;
+    flex-direction:row;}
+      
+    .buscador>input[type=text],
+    .buscador>button {
+    display:block;}
+      
+    .buscador>input[type=text] {
+    flex:auto;
+    border:2px solid $color-primary;}
+      
+    .buscador>button {
+    padding:5px 5px;
+    background-color: $color-primary;
+    color:white;
+    border:none;}
+
+    .mapa-home {
+        display: grid;
+        grid-template-columns: 1fr 1fr}
+
+    .retiros-home {
+        color: $color-primary;
+    }
+
+    .pag-mayorista {
+        display: inline;
+        flex-direction: row;}
+
+.pie {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+}
+
+
+        
