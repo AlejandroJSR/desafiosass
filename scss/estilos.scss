@@ -1,0 +1,12 @@
+$boton: (
+    coleccion1: #313030,
+    coleccion2: #d60c0c,
+);
+
+@each $red, $colors in $boton{
+    .red-#{$red}{
+        color: $colors;
+    }
+    
+}
+    
