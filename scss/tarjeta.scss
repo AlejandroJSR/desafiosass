@@ -1,0 +1,10 @@
+.tarjeta {
+    @extend .card;
+    @include size-img;
+    
+    > h3 {
+        @extend .tittle;  }
+    
+    > img {
+        @extend .avatar; } 
+}

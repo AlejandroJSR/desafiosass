@@ -4,6 +4,32 @@
 .red-coleccion2 {
   color: #d60c0c; }
 
+.card, .tarjeta {
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.1); }
+
+.avatar, .tarjeta > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px; }
+
+.tittle, .tarjeta > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 4px;
+  opacity: 0.85; }
+
+.small {
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.75; }
+
+.tarjeta {
+  max-width: 300px;
+  text-align: center; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -40,7 +66,7 @@ h1 {
 
 .buscador-menu > button {
   padding: 5px 5px;
-  background-color: red;
+  background-color: #d60c0c;
   color: white;
   border: none; }
 
@@ -50,7 +76,7 @@ h1 {
 .checkbtn {
   background-color: #313030;
   font-size: 30px;
-  color: #ca2020;
+  color: #d60c0c;
   line-height: 80px;
   margin-right: 40px;
   cursor: pointer;
@@ -86,14 +112,15 @@ body {
   display: none; }
 
 .colecciones-home {
+  margin-left: 20%;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  border: none; }
+  justify-content: center; }
+  .colecciones-home :hover {
+    background: #d60c0c; }
 
 .retiros-home {
   text-align: center;
-  color: red; }
+  color: #d60c0c; }
 
 .ws-boton {
   position: fixed;
@@ -174,12 +201,10 @@ body {
     display: flex;
     height: 100%; }
   .colecciones-home {
+    margin-left: 10%;
+    margin-top: 5%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: none; }
+    grid-template-columns: 1fr 1fr 1fr; }
   .buscador-menu {
     display: none; }
   .buscador {
@@ -195,14 +220,18 @@ body {
     border: 2px solid red; }
   .buscador > button {
     padding: 5px 5px;
-    background-color: red;
+    background-color: #d60c0c;
     color: white;
     border: none; }
   .mapa-home {
+    margin-left: 5%;
+    margin-top: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr; }
   .retiros-home {
-    color: red; }
+    margin-top: 10%;
+    font-size: 25px;
+    color: #d60c0c; }
   .pag-mayorista {
     display: inline;
     flex-direction: row; }

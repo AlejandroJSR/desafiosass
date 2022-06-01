@@ -1,5 +1,6 @@
 @import "variables";
 @import "estilos";
+@import "tarjeta";
 * {
     margin: 0;
     padding: 0; }
@@ -7,8 +8,8 @@
     display: none; }
   
   .superior {
-    background: #313030;
-    flex-direction:row }
+    background: map-get($map: $palette, $key: 'secondary');
+    flex-direction:row; }
   
   .logo-proandroid {
     display: none; }
@@ -34,7 +35,7 @@
   
   .buscador-menu > button {
     padding: 5px 5px;
-    background-color: red;
+    background-color: map-get($map: $palette, $key:'primary' );
     color: white;
     border: none; }
   
@@ -42,27 +43,27 @@
       display: none;}
   
   .checkbtn{
-    background-color: #313030;
+    background-color: map-get($map: $palette, $key: 'secondary');
     font-size: 30px;
-    color: rgb(202, 32, 32);
+    color: map-get($map: $palette, $key:'primary' );
     line-height: 80px;
     margin-right: 40px;
     cursor: pointer;
     text-align: center;}
   nav{
-    background-color: #313030;
+    background-color: map-get($map: $palette, $key: 'secondary');
   } 
    .menu{
     display: none;
     flex-direction: row;
     list-style: none;
-    background: #313030;
+    background: map-get($map: $palette, $key: 'secondary');
     
      li {
       flex-direction: row; 
 
       a:hover {
-        background: rgb(214, 12, 12);}
+        background: map-get($map: $palette, $key:'primary' );}
       a {
         text-decoration: none;
         color: white;
@@ -81,14 +82,16 @@
     display: none}
   
   .colecciones-home {
+    margin-left: 20%;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    border: none; }
+    :hover {
+      background: map-get($map: $palette, $key:'primary' ) }
+ }
   
   .retiros-home {
     text-align: center;
-    color: red; }
+    color: map-get($map: $palette, $key:'primary' )}
   
   .ws-boton {
     position: fixed;
@@ -101,7 +104,7 @@
     text-align: center;
     display: flex;
     color: #777777;
-    background: #313030;
+    background: map-get($map: $palette, $key: 'secondary');
     padding: 15px;
     font-family: 'Roboto Condensed', sans-serif; }
   
@@ -143,7 +146,7 @@
   .menu {
     display: flex;
     list-style: none;
-    background: #313030; 
+    background: map-get($map: $palette, $key: 'secondary'); 
     li {
     display: inline-block; 
      a {
@@ -153,7 +156,7 @@
         display: block;
         text-align: center; }
     a:hover {
-    background: #d60c0c; }}}
+    background: map-get($map: $palette, $key:'primary' ) }}}
 
   .usuario-menu{
     display: none;  }
@@ -172,17 +175,17 @@
     display: none;}
 
   .superior {
-    background: #313030;
+    background: map-get($map: $palette, $key: 'secondary');
     display: flex;
     height: 100%;}
 
   .colecciones-home {
+    margin-left: 10%;
+    margin-top: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: none; }
+  
+     }
 
   .buscador-menu{
     display: none;}
@@ -204,16 +207,20 @@
 
   .buscador > button {
     padding: 5px 5px;
-    background-color: red;
+    background-color: map-get($map: $palette, $key:'primary' );
     color: white;
     border: none; }
 
   .mapa-home {
+    margin-left: 5%;
+    margin-top: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr; }
 
   .retiros-home {
-    color: red; }
+    margin-top: 10%;
+    font-size: 25px;
+    color: map-get($map: $palette, $key:'primary' )}
 
   .pag-mayorista {
     display: inline;
@@ -236,5 +243,5 @@
     text-align: center;}
 
  :hover{
-    background: rgb(214, 12, 12);}}
+    background: map-get($map: $palette, $key:'primary' );}}
   }
