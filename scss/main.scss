@@ -132,6 +132,14 @@
   
   .txt-repuestos {
     text-align: center; }
+
+  .txt-carcasas {
+      text-align: center; }
+
+.card-producto {
+  margin-left: 20%;
+  align-items: center;
+  justify-content: center;}
   
 @media screen and (min-width: 768px) {
   .logo-proandroid {
@@ -183,9 +191,13 @@
     margin-left: 10%;
     margin-top: 5%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  
-     }
+    grid-template-columns: 1fr 1fr 1fr;}
+
+  .card-producto {
+    margin-left: 10%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;}
 
   .buscador-menu{
     display: none;}
